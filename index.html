@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html> 
+       <body class="final">
+    <header class="head1"> RCOEM Student Tour Registration </header>    
+        <div class="form">
+        <head><link rel="stylesheet" href="style.css"> </head>
+        <script src="validate.js"></script>
+        <form name="tour" id="tour" method="post" action="connect.php" onsubmit="return Validate()">
+            <p class="form2">Enter your Name
+                <label class="space">
+        <input class="form1" type="text" name="name" id="name" placeholder="First Name" required >
+    </label> </p>
+         <p class="form2">Enter email id 
+            <label class="space">
+            <input class="email" type="email" name="email" id="email" placeholder="xyz@rknec.edu"  >
+            </label></p>
+        <p class="form2">Select Gender
+            <label class="space">
+        <input class="gender" id="gender" name="gnd" value="male" type="radio">Male
+        <input class="gender"  id="gender" name="gnd" value="female" type="radio">Female
+        <input class="gender" id="gender" name="gnd" value="trans" type="radio">Transgender
+            </label>
+    </p>
+        <p class="form2">
+            Enter your city
+            <label class="space">
+            <select name="city"  class="city" id="city" required>
+                <option value="NULL" >Select place for visit</option>
+                <option value="Jaipur">Jaipur </option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Cairo">Cairo</option>
+                <option value="Jakarta">Jakarta</option>
+                <option value="Abu-Dhabi">Abu Dhabi</option>
+             </select></label>
+             </p>
+            
+        <p class="form2">
+            <label class="space">
+            <button type="submit" class="button" onclick="">Submit</button>
+            </label>
+        </p>
+        <p class="form2">
+            <label class="space">
+                
+            <a href="Sql.php"> Get details of Tourist</button>
+            </label>
+        </p>
+    </div>
+        </form>
+    </body>
+</html>
